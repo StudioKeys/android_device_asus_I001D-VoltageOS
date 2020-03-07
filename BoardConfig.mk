@@ -151,5 +151,9 @@ ifeq ($(BOARD_AVB_ENABLE), true)
    BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 endif
 
+# Vendor init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_I001D
+TARGET_RECOVERY_DEVICE_MODULES := libinit_I001D
+
 # Inherit from the proprietary version
 -include vendor/asus/I001D/BoardConfigVendor.mk
