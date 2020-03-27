@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.2-service.I001D
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/I001D/I001D-vendor.mk)
 
