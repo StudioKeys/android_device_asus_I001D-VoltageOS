@@ -42,6 +42,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -195,4 +197,8 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhidltransport \
     libhidltransport.vendor
+
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite.so
 
