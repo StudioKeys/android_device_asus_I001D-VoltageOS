@@ -104,4 +104,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Vendor
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.va_aosp.support=1
+    ro.vendor.qti.va_aosp.support=1 \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1
