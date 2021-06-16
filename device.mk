@@ -76,10 +76,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
-# AsusParts
-PRODUCT_PACKAGES += \
-    AsusParts
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default
