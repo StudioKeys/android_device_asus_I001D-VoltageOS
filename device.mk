@@ -103,7 +103,7 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.7.vendor \
     libdisplayconfig \
     libqdMetaData \
-    FrameRateTile
+    libqdMetaData.system
 
 # Lights
 PRODUCT_PACKAGES += \
