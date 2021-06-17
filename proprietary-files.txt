@@ -40,17 +40,7 @@ product/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so
 # Camera
 lib/DataSet/ispDB/ASUS_UNDI.bin
 lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin
-lib64/DataSet/arch/DIT_List.cfg
-lib64/DataSet/ditSCidGen/msgchk.db
-lib64/DataSet/ispDB/ParameterDB.db
 lib64/libAsusRGBSensorHAL.so
-lib64/libxditk_DIT_MSMv1.so
-lib64/libxditk_DIT_Manager.so
-lib64/libxditk_ISP.so
-lib64/libxditk_arch.so
-lib64/libxditk_ditArchLIB.so
-lib64/libxditk_ditBSP.so
-lib64/libxditk_ditBSP_JNI.so
 
 # DPM
 framework/tcmclient.jar
@@ -90,7 +80,6 @@ framework/com.qti.location.sdk.jar
 framework/izat.xt.srv.jar
 lib64/liblocationservice_jni.so
 lib64/libxt_native.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
 product/lib64/vendor.qti.gnss@1.0.so
 product/lib64/vendor.qti.gnss@1.1.so
 product/lib64/vendor.qti.gnss@1.2.so
@@ -184,3 +173,81 @@ lib64/libwfduibcsrcinterface.so
 -priv-app/WfdService/WfdService.apk
 product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+
+# Asus Camera
+etc/permissions/privapp-permissions-ASUS_I001_1.xml
+-priv-app/AsusCamera/AsusCamera.apk
+priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so
+priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so
+priv-app/AsusCamera/lib/arm64/libbitmap.so
+priv-app/AsusCamera/lib/arm64/libmpbase.so
+priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so
+priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so
+priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so
+priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so
+priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so
+priv-app/AsusCamera/lib/arm64/libyuv_util.so
+priv-app/AsusCamera/lib/arm64/libUndistort.so
+priv-app/AsusCamera/lib/arm64/libasusundistort.so
+priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so
+
+# Asus Gallery
+-priv-app/AsusGallery/AsusGallery.apk
+priv-app/AsusGallery/lib/arm/libmpbase.so
+priv-app/AsusGallery/lib/arm/libjni_filter_show.so
+priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so
+priv-app/AsusGallery/lib/arm/libjni_face_effect.so
+priv-app/AsusGallery/lib/arm/librs.vignette.so
+priv-app/AsusGallery/lib/arm/libtensorflow_inference.so
+priv-app/AsusGallery/lib/arm/librs.convolve3x3.so
+priv-app/AsusGallery/lib/arm/libpanorenderer.so
+priv-app/AsusGallery/lib/arm/libpano_video_renderer.so
+priv-app/AsusGallery/lib/arm/librsjni_androidx.so
+priv-app/AsusGallery/lib/arm/librsjni.so
+priv-app/AsusGallery/lib/arm/libgif.so
+priv-app/AsusGallery/lib/arm/librs.grey.so
+priv-app/AsusGallery/lib/arm/libarcsoft_beautyshot.so
+priv-app/AsusGallery/lib/arm/librs.saturation.so
+priv-app/AsusGallery/lib/arm/libblur.so
+priv-app/AsusGallery/lib/arm/librs.grad.so
+priv-app/AsusGallery/lib/arm/librs.blur.so
+priv-app/AsusGallery/lib/arm/libRSSupport.so
+priv-app/AsusGallery/lib/arm/libjni_wide_angle_undistort.so
+priv-app/AsusGallery/lib/arm/libgvr.so
+priv-app/AsusGallery/lib/arm/libjni_cvface_api.so
+priv-app/AsusGallery/lib/arm/libcvface_api.so
+priv-app/AsusGallery/lib/arm/libarcsoft_undistort.so
+priv-app/AsusGallery/lib/arm/libopencv_java3.so
+
+# Asus GalleryBurst
+-priv-app/AsusGalleryBurst/AsusGalleryBurst.apk
+priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so
+
+# Asus Camera Deps
+product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+product/lib64/libQTEEConnector_system.so
+product/lib64/libseccam.so
+product/lib64/vendor.qti.hardware.cvp@1.0.so
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+product/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+product/lib64/vendor.qti.hardware.scve.panorama@1.0.so
+product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+product/lib64/libQTEEConnector_system.so
+product/lib64/libimscamera_jni.so
+lib64/libarcsoft_beautyshot.so
+lib64/libarcsoft_face_detection.so
+lib64/libarcsoft_face_tracking.so
+lib64/libarcsoft_hdr.so
+lib64/libarcsoft_low_light_shot.so
+lib64/libarcsoft_nighthawk.so
+lib64/libarcsoft_piczoom.so
+product/lib/libQTEEConnector_system.so
+product/lib/libseccam.so
+product/lib/vendor.qti.hardware.cvp@1.0.so
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
+product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+product/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
+product/lib/vendor.qti.hardware.scve.panorama@1.0.so
+product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+product/lib/libimscamera_jni.so
