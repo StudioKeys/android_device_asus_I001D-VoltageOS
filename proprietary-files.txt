@@ -98,7 +98,7 @@ product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 # Smali edit: https://gist.github.com/luca020400/b0152c9b77e55f50eee0513cf666f61c
--product/priv-app/ims/ims.apk|2cb0faf55afd467ef7fda87de10dc54c87cc85f4
+-product/priv-app/ims/ims.apk|c0e2daa9938c58518e4dd3b2ed16fd8f3879c9d3
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
@@ -175,8 +175,8 @@ product/lib/vendor.qti.hardware.wifidisplaysession@1.0.so
 product/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 # Asus Camera
-etc/permissions/privapp-permissions-ASUS_I001_1.xml
--priv-app/AsusCamera/AsusCamera.apk
+etc/permissions/privapp-permissions-ASUS_I001_1.xml|4f8ea2c8ddb68cd68e4de966c8d6e06bac0347a8
+-priv-app/AsusCamera/AsusCamera.apk|17853e4b36a87035748a3741674af965ef36604a
 priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so
 priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so
 priv-app/AsusCamera/lib/arm64/libbitmap.so
@@ -190,9 +190,12 @@ priv-app/AsusCamera/lib/arm64/libyuv_util.so
 priv-app/AsusCamera/lib/arm64/libUndistort.so
 priv-app/AsusCamera/lib/arm64/libasusundistort.so
 priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so
+priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_interval_capture.so
+priv-app/AsusCamera/lib/arm64/libasus_camera_interval_panorama.so
+priv-app/AsusCamera/lib/arm64/libyuv_camera.so
 
 # Asus Gallery
--priv-app/AsusGallery/AsusGallery.apk
+-priv-app/AsusGallery/AsusGallery.apk|d76a4e0db0cb7f5cf81bfeb1ce3173cc8dfd89fc
 priv-app/AsusGallery/lib/arm/libmpbase.so
 priv-app/AsusGallery/lib/arm/libjni_filter_show.so
 priv-app/AsusGallery/lib/arm/libtensorflowlite_jni.so
@@ -220,7 +223,7 @@ priv-app/AsusGallery/lib/arm/libarcsoft_undistort.so
 priv-app/AsusGallery/lib/arm/libopencv_java3.so
 
 # Asus GalleryBurst
--priv-app/AsusGalleryBurst/AsusGalleryBurst.apk
+-priv-app/AsusGalleryBurst/AsusGalleryBurst.apk|bcc4a93a6a2183a858708d80365f4f5961b44e6e
 priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so
 
 # Asus Camera Deps
