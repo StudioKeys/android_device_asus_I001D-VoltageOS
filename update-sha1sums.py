@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2017-20222 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,8 +20,8 @@ import os
 import sys
 from hashlib import sha1
 
-device = 'zippo'
-vendor = 'lenovo'
+device = 'I01WD'
+vendor = 'asus'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()

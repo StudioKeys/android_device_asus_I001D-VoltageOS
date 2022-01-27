@@ -1,41 +1,32 @@
 
-# Copyright (C) 2019-2021 The LineageOS Project
+# Copyright (C) 2019-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
--include device/lenovo/sm8150-common/BoardConfigCommon.mk
+-include device/asus/sm8150-common/BoardConfigCommon.mk
 
-BOARD_VENDOR := lenovo
+BOARD_VENDOR := asus
 
-DEVICE_PATH := device/lenovo/zippo
+DEVICE_PATH := device/asus/I01WD
 
 # Assertions
-TARGET_BOARD_INFO_FILE ?= $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := zippo
-
-# FM
-BOARD_HAVE_QCOM_FM := true
+TARGET_OTA_ASSERT_DEVICE := WW_I01WD
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CONFIG := lineage_zippo_defconfig
+  TARGET_KERNEL_CONFIG := vendor/zs630kl_defconfig
   TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/lenovo/sm8150
+  TARGET_KERNEL_SOURCE := kernel/asus/sm8150
 endif
 
-# Fingerprint
-SOONG_CONFIG_LENOVO_MSMNILE_FOD_POS_X = 450
-SOONG_CONFIG_LENOVO_MSMNILE_FOD_POS_Y = 1916
-SOONG_CONFIG_LENOVO_MSMNILE_FOD_SIZE = 178
-
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
+TARGET_TAP_TO_WAKE_NODE := "/proc/driver/dclick"
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Inherit from the proprietary version
--include vendor/lenovo/zippo/BoardConfigVendor.mk
+-include vendor/asus/I01WD/BoardConfigVendor.mk
