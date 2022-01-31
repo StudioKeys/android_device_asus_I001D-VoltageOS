@@ -16,11 +16,9 @@ TARGET_OTA_ASSERT_DEVICE := WW_I01WD
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-  TARGET_KERNEL_CONFIG := vendor/zs630kl_defconfig
-  TARGET_KERNEL_CLANG_COMPILE := true
-  TARGET_KERNEL_SOURCE := kernel/asus/sm8150
-endif
+TARGET_KERNEL_CONFIG := vendor/zs630kl_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_SOURCE := kernel/asus/sm8150
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/driver/dclick"
