@@ -368,16 +368,28 @@ vendor/bin/hvdcp_opti
 vendor/bin/init.qti.chg_policy.sh
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
-vendor/etc/charger_fw_fstab.qti
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/bin/gf_ver.sh
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+vendor/etc/init/init.goodixfp.rc
+vendor/etc/firmware/goodixfp.b00
+vendor/etc/firmware/goodixfp.b01
+vendor/etc/firmware/goodixfp.b02
+vendor/etc/firmware/goodixfp.b03
+vendor/etc/firmware/goodixfp.b04
+vendor/etc/firmware/goodixfp.b05
+vendor/etc/firmware/goodixfp.b06
+vendor/etc/firmware/goodixfp.b07
+vendor/etc/firmware/goodixfp.mbn
+vendor/etc/firmware/goodixfp.mdt
 vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/libgf_ca.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/libgoodixhwfingerprint.so
 
 # FM
 product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so
