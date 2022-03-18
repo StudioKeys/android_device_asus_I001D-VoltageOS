@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=I01WD
+export DEVICE=I001D
 export DEVICE_COMMON=sm8150-common
 export VENDOR=asus
 

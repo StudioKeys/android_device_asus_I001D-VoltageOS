@@ -1,4 +1,3 @@
-
 # Copyright (C) 2019-2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -7,10 +6,10 @@
 
 BOARD_VENDOR := asus
 
-DEVICE_PATH := device/asus/I01WD
+DEVICE_PATH := device/asus/I001D
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := WW_I01WD
+TARGET_OTA_ASSERT_DEVICE := WW_I001D
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -33,4 +32,4 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/driver/dclick"
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Inherit from the proprietary version
--include vendor/asus/I01WD/BoardConfigVendor.mk
+-include vendor/asus/I001D/BoardConfigVendor.mk
