@@ -19,6 +19,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_ZS660KL.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
 
+# Device init scripts
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

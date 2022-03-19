@@ -31,5 +31,8 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/driver/dclick"
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Inherit from the proprietary version
 -include vendor/asus/I001D/BoardConfigVendor.mk
