@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_I001D.mk
+    $(LOCAL_DIR)/bliss_I001D.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_I001D-user \
-    lineage_I001D-userdebug \
-    lineage_I001D-eng
+    bliss_I001D-user \
+    bliss_I001D-userdebug \
+    bliss_I001D-eng
