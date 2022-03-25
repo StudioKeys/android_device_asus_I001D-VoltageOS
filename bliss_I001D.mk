@@ -18,7 +18,11 @@ PRODUCT_NAME := bliss_I001D
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# UDFPS Animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \
