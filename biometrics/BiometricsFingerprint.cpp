@@ -22,6 +22,10 @@
 #include <fstream>
 #include <android-base/file.h>
 
+#define GLOBAL_HBM_MODE "/proc/globalHbm"
+#define GLOBAL_HBM_ON "1"
+#define GLOBAL_HBM_OFF "0"
+
 namespace android {
 namespace hardware {
 namespace biometrics {
@@ -84,10 +88,12 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 }
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
+    set(GLOBAL_HBM_MODE, GLOBAL_HBM_ON);
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    set(GLOBAL_HBM_MODE, GLOBAL_HBM_OFF);
     return Void();
 }
 
