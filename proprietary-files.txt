@@ -534,8 +534,6 @@ vendor/lib64/libpwirissoft.so
 vendor/lib64/libsnapdragoncolor.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/init/init.goodixfp.rc
 vendor/firmware/goodix_9896_config_station.cfg
 vendor/firmware/goodix_9896_firmware.bin
