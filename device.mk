@@ -20,7 +20,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_ZS660KL.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration_ZS660KL.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration_ZS660KL_24bit.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration_ZS660KL_24bit.xml \
-    $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
+    $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml \
+    $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
