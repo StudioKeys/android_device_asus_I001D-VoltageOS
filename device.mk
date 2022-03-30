@@ -15,6 +15,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes_ZS660KL.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_ZS660KL.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_ZS660KL_EU.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_ZS660KL_EU.xml \
+    $(LOCAL_PATH)/audio/mixer_paths_pahu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_pahu.xml \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration_ZS660KL.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_ZS660KL.xml \
