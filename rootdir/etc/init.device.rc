@@ -1,0 +1,107 @@
+on fs
+
+# Chown Aura sync attribute +++
+    chmod 0666 /sys/class/leds/aura_sync/VDD
+    chmod 0664 /sys/class/leds/aura_sync/red_pwm
+    chmod 0664 /sys/class/leds/aura_sync/green_pwm
+    chmod 0664 /sys/class/leds/aura_sync/blue_pwm
+    chmod 0664 /sys/class/leds/aura_sync/mode
+    chmod 0664 /sys/class/leds/aura_sync/apply
+    chmod 0664 /sys/class/leds/aura_sync/fw_ver
+    chmod 0666 /sys/class/leds/aura_sync/fw_update
+    chmod 0664 /sys/class/leds/aura_sync/frame
+    chmod 0664 /sys/class/leds/aura_sync/speed
+    chmod 0664 /sys/class/leds/aura_sync/led_on
+    chmod 0664 /sys/class/leds/aura_sync/bumper_enable
+    chmod 0664 /sys/class/leds/bumper/VDD
+
+    chown root system /sys/class/leds/aura_sync/VDD
+    chown system system /sys/class/leds/aura_sync/red_pwm
+    chown system system /sys/class/leds/aura_sync/green_pwm
+    chown system system /sys/class/leds/aura_sync/blue_pwm
+    chown root system /sys/class/leds/aura_sync/mode
+    chown root system /sys/class/leds/aura_sync/apply
+    chown system system /sys/class/leds/aura_sync/fw_ver
+    chown system system /sys/class/leds/aura_sync/fw_update
+    chown system system /sys/class/leds/aura_sync/frame
+    chown system system /sys/class/leds/aura_sync/speed
+    chown system system /sys/class/leds/aura_sync/led_on
+    chown system system /sys/class/leds/aura_sync/bumper_enable
+    chown system system /sys/class/leds/bumper/VDD
+
+on post-fs-data
+
+# FRGB sensor permission & symlink
+    chown root camera /dev/asusFRGBSensor
+    chmod 0666 /dev/asusFRGBSensor
+
+# chown LED attribute
+    chmod 0664 /sys/class/leds/red/brightness
+    chmod 0664 /sys/class/leds/green/brightness
+    chmod 0664 /sys/class/leds/red/delay_on
+    chmod 0664 /sys/class/leds/green/delay_on
+    chmod 0664 /sys/class/leds/red/delay_off
+    chmod 0664 /sys/class/leds/green/delay_off
+
+#Austin+++
+    chmod 0666 /dev/audio
+
+# Chmod and Chown touch nodes
+     chmod 0775 /sys/devices/platform/goodix_ts.0/chip_info
+     chmod 0777 /sys/devices/platform/goodix_ts.0/airtrigger_touch
+     chown system system /sys/devices/platform/goodix_ts.0/airtrigger_touch
+     chmod 0777 /sys/devices/platform/goodix_ts.0/keymapping_touch
+     chown system system /sys/devices/platform/goodix_ts.0/keymapping_touch     
+     chmod 0777 /sys/devices/platform/goodix_ts.0/game_settings
+     chown system system /sys/devices/platform/goodix_ts.0/game_settings
+     chmod 0777 /sys/devices/platform/goodix_ts.0/glove_mode
+     chown system system /sys/devices/platform/goodix_ts.0/glove_mode
+
+# Vibrator
+    chown system shell /sys/class/leds/vibrator/hwReset
+    chown system shell /sys/class/leds/vibrator/channel
+    chown system shell /sys/class/leds/vibrator/pwm
+    chown system shell /sys/class/leds/vibrator/vd_clamp
+    chown system shell /sys/class/leds/vibrator/mem_play
+    chown system shell /sys/class/leds/vibrator/rtp_play
+    chown system shell /sys/class/leds/vibrator/rtp_play_repeat
+    chown system shell /sys/class/leds/vibrator/rtp_play_file
+    chown system shell /sys/class/leds/vibrator/rtp_break
+    chown system shell /sys/class/leds/vibrator/status_reg
+    chown system shell /sys/class/leds/vibrator/trigger_gpio
+    chown system shell /sys/class/leds/vibrator/trigger_test
+    chown system shell /sys/class/leds/vibrator/trigger_level
+    chown system shell /sys/class/leds/vibrator/trigger_waveform
+    chown system shell /sys/class/leds/vibrator/trigger1_waveform
+    chown system shell /sys/class/leds/vibrator/trigger3_waveform
+    chown system shell /sys/class/leds/vibrator/trigger2_enable
+    chown system shell /sys/class/leds/vibrator/vib_enable
+    chown system shell /sys/dongwoon_haptic_drv
+    chown system shell /sys/dongwoon_haptic_drv/enableVIB
+    chown system shell /sys/dongwoon_haptic_drv/enableVIB_0832
+    chown system shell /sys/asus_vib_ctrl
+    chown system shell /sys/asus_vib_ctrl/top_vib_control
+    chown system shell /sys/asus_vib_ctrl/bot_vib_control
+    chmod 0777 /sys/class/leds/vibrator/channel
+    chmod 0777 /sys/dongwoon_haptic_drv
+    chmod 0777 /sys/class/leds/vibrator/pwm
+    chmod 0777 /sys/class/leds/vibrator/mem_play
+    chmod 0777 /sys/class/leds/vibrator/rtp_play
+    chmod 0777 /sys/class/leds/vibrator/rtp_play_repeat
+    chmod 0777 /sys/class/leds/vibrator/rtp_play_file
+    chmod 0777 /sys/class/leds/vibrator/rtp_break
+    chmod 0777 /sys/class/leds/vibrator/vd_clamp
+    chmod 0777 /sys/class/leds/vibrator/status_reg
+    chmod 0777 /sys/class/leds/vibrator/trigger_gpio
+    chmod 0777 /sys/class/leds/vibrator/trigger_test
+    chmod 0777 /sys/class/leds/vibrator/trigger_level
+    chmod 0777 /sys/class/leds/vibrator/trigger_waveform
+    chmod 0777 /sys/class/leds/vibrator/trigger1_waveform
+    chmod 0777 /sys/class/leds/vibrator/trigger3_waveform
+    chmod 0777 /sys/class/leds/vibrator/trigger2_enable
+    chmod 0777 /sys/class/leds/vibrator/vib_enable
+    chmod 0777 /sys/dongwoon_haptic_drv/enableVIB
+    chmod 0777 /sys/dongwoon_haptic_drv/enableVIB_0832
+    chmod 0777 /sys/asus_vib_ctrl
+    chmod 0777 /sys/asus_vib_ctrl/top_vib_control
+    chmod 0777 /sys/asus_vib_ctrl/bot_vib_control

@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    init.device.rc
 
 # Fingerprint
 PRODUCT_PACKAGES += \
