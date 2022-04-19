@@ -69,12 +69,12 @@ vendor/lib64/libadsprpc.so
 
 # Audio (FX modules)
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdtsaudio.so
+vendor/lib/soundfx/libdynproc.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libdtsaudio.so
-vendor/lib/soundfx/libdynproc.so
 vendor/lib/libdts-eagle-shared.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libdtsaudio.so
@@ -115,6 +115,9 @@ vendor/etc/usb_audio_policy_configuration.xml
 system_ext/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service_64
 vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
+vendor/lib/DataSet/arch/DIT_List.cfg
+vendor/lib/DataSet/ditSCidGen/msgchk.db
+vendor/lib/DataSet/ispDB/ParameterDB.db
 vendor/lib/camera/components/com.arcsoft.node.hdrplusraw.so
 vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so
 vendor/lib/camera/components/com.arcsoft.node.supernightraw.so
@@ -203,6 +206,14 @@ vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/AsusUndistort.so
+vendor/lib/camera.device@1.0-impl.so
+vendor/lib/camera.device@3.2-impl.so
+vendor/lib/camera.device@3.3-impl.so
+vendor/lib/camera.device@3.4-external-impl.so
+vendor/lib/camera.device@3.4-impl.so
+vendor/lib/camera.device@3.5-external-impl.so
+vendor/lib/camera.device@3.5-impl.so
+vendor/lib/camera.device@3.6-external-impl.so
 vendor/lib/libAsusMotor_hidl.so
 vendor/lib/libAsusRGBSensorHAL.so
 vendor/lib/libOpenCL.so
@@ -212,8 +223,11 @@ vendor/lib/libarcsoft_hdr_plus_raw.so
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libcamxfdalgov7.so
+vendor/lib/libcamxfdalgov8.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxstatscore.so
+vendor/lib/libcamxswprocessalgo.so
+vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libgralloc.qti.so
 vendor/lib/libmpbase.so
@@ -229,26 +243,15 @@ vendor/lib/libxditk_ISP.so
 vendor/lib/libxditk_arch.so
 vendor/lib/libxditk_ditArchLIB.so
 vendor/lib/libxditk_ditBSP.so
+vendor/lib/libxditk_ditBSP_JNI.so
 vendor/lib/vendor.asus.motor@1.0-impl.so
 vendor/lib/vendor.asus.motor@1.0.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/libxditk_ditBSP_JNI.so
-vendor/lib/camera.device@1.0-impl.so
-vendor/lib/camera.device@3.2-impl.so
-vendor/lib/camera.device@3.3-impl.so
-vendor/lib/camera.device@3.4-external-impl.so
-vendor/lib/camera.device@3.4-impl.so
-vendor/lib/camera.device@3.5-external-impl.so
-vendor/lib/camera.device@3.5-impl.so
-vendor/lib/camera.device@3.6-external-impl.so
-vendor/lib/libcamxfdalgov8.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libcamxtintlessalgo.so
-vendor/lib/DataSet/arch/DIT_List.cfg
-vendor/lib/DataSet/ditSCidGen/msgchk.db
-vendor/lib/DataSet/ispDB/ParameterDB.db
+vendor/lib64/DataSet/arch/DIT_List.cfg
+vendor/lib64/DataSet/ditSCidGen/msgchk.db
+vendor/lib64/DataSet/ispDB/ParameterDB.db
 vendor/lib64/camera/components/com.arcsoft.node.hdrplusraw.so
 vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
 vendor/lib64/camera/components/com.arcsoft.node.supernightraw.so
@@ -337,6 +340,14 @@ vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/AsusUndistort.so
+vendor/lib64/camera.device@1.0-impl.so
+vendor/lib64/camera.device@3.2-impl.so
+vendor/lib64/camera.device@3.3-impl.so
+vendor/lib64/camera.device@3.4-external-impl.so
+vendor/lib64/camera.device@3.4-impl.so
+vendor/lib64/camera.device@3.5-external-impl.so
+vendor/lib64/camera.device@3.5-impl.so
+vendor/lib64/camera.device@3.6-external-impl.so
 vendor/lib64/libAsusMotor_hidl.so
 vendor/lib64/libAsusRGBSensorHAL.so
 vendor/lib64/libOpenCL.so
@@ -346,8 +357,11 @@ vendor/lib64/libarcsoft_hdr_plus_raw.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamxfdalgov7.so
+vendor/lib64/libcamxfdalgov8.so
 vendor/lib64/libcamxfdengine.so
 vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxswprocessalgo.so
+vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libgralloc.qti.so
 vendor/lib64/libmpbase.so
@@ -363,26 +377,12 @@ vendor/lib64/libxditk_ISP.so
 vendor/lib64/libxditk_arch.so
 vendor/lib64/libxditk_ditArchLIB.so
 vendor/lib64/libxditk_ditBSP.so
+vendor/lib64/libxditk_ditBSP_JNI.so
 vendor/lib64/vendor.asus.motor@1.0-impl.so
 vendor/lib64/vendor.asus.motor@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/camera.device@1.0-impl.so
-vendor/lib64/camera.device@3.2-impl.so
-vendor/lib64/camera.device@3.3-impl.so
-vendor/lib64/camera.device@3.4-external-impl.so
-vendor/lib64/camera.device@3.4-impl.so
-vendor/lib64/camera.device@3.5-external-impl.so
-vendor/lib64/camera.device@3.5-impl.so
-vendor/lib64/camera.device@3.6-external-impl.so
-vendor/lib64/libxditk_ditBSP_JNI.so
-vendor/lib64/DataSet/arch/DIT_List.cfg
-vendor/lib64/DataSet/ditSCidGen/msgchk.db
-vendor/lib64/DataSet/ispDB/ParameterDB.db
-vendor/lib64/libcamxfdalgov8.so
-vendor/lib64/libcamxswprocessalgo.so
-vendor/lib64/libcamxtintlessalgo.so
 
 # Camera arcsoft
 vendor/lib/libarcsoft_beautyshot.so
@@ -392,8 +392,8 @@ vendor/lib/libarcsoft_distortion_correction.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_face_detection.so
 vendor/lib/libarcsoft_face_tracking.so
-vendor/lib/libarcsoft_hdr_plus_raw.so
 vendor/lib/libarcsoft_hdr.so
+vendor/lib/libarcsoft_hdr_plus_raw.so
 vendor/lib/libarcsoft_low_light_shot.so
 vendor/lib/libarcsoft_nighthawk.so
 vendor/lib/libarcsoft_piczoom.so
@@ -406,8 +406,8 @@ vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dualcam_refocus.so
 vendor/lib64/libarcsoft_face_detection.so
 vendor/lib64/libarcsoft_face_tracking.so
-vendor/lib64/libarcsoft_hdr_plus_raw.so
 vendor/lib64/libarcsoft_hdr.so
+vendor/lib64/libarcsoft_hdr_plus_raw.so
 vendor/lib64/libarcsoft_low_light_shot.so
 vendor/lib64/libarcsoft_nighthawk.so
 vendor/lib64/libarcsoft_piczoom.so
@@ -458,7 +458,6 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
 # Display Iris
-vendor/etc/irissoft.fw
 vendor/etc/inparm_pr1/inParm1.txt
 vendor/etc/inparm_pr1/inParm10.txt
 vendor/etc/inparm_pr1/inParm11.txt
@@ -522,13 +521,14 @@ vendor/etc/inparm_pr2_2/inParm6.txt
 vendor/etc/inparm_pr2_2/inParm7.txt
 vendor/etc/inparm_pr2_2/inParm8.txt
 vendor/etc/inparm_pr2_2/inParm9.txt
-vendor/lib/libpwiriscalibrate.so
+vendor/etc/irissoft.fw
 vendor/lib/libpwirisPCS.so
+vendor/lib/libpwiriscalibrate.so
 vendor/lib/libpwirispq.so
 vendor/lib/libpwirissoft.so
 vendor/lib/libsnapdragoncolor.so
-vendor/lib64/libpwiriscalibrate.so
 vendor/lib64/libpwirisPCS.so
+vendor/lib64/libpwiriscalibrate.so
 vendor/lib64/libpwirispq.so
 vendor/lib64/libpwirissoft.so
 vendor/lib64/libsnapdragoncolor.so
@@ -541,9 +541,9 @@ vendor/firmware/goodix_cfg_group.bin
 vendor/firmware/goodix_cfg_group_station.bin
 vendor/firmware/goodix_cfg_station_9896.bin
 vendor/firmware/goodix_config.cfg
-vendor/firmware/goodix_configs_glove.cfg
 vendor/firmware/goodix_config_station.cfg
 vendor/firmware/goodix_config_test.cfg
+vendor/firmware/goodix_configs_glove.cfg
 vendor/firmware/goodix_cyan.b00
 vendor/firmware/goodix_cyan.b01
 vendor/firmware/goodix_cyan.b02
@@ -568,7 +568,10 @@ vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
 # Firmwares
+vendor/etc/firmware/1.bin
+vendor/etc/firmware/10.bin
 vendor/etc/firmware/100.bin
+vendor/etc/firmware/101.bin
 vendor/etc/firmware/10100.bin
 vendor/etc/firmware/10101.bin
 vendor/etc/firmware/10102.bin
@@ -635,7 +638,6 @@ vendor/etc/firmware/10162.bin
 vendor/etc/firmware/10163.bin
 vendor/etc/firmware/10164.bin
 vendor/etc/firmware/10165.bin
-vendor/etc/firmware/101.bin
 vendor/etc/firmware/102.bin
 vendor/etc/firmware/103.bin
 vendor/etc/firmware/104.bin
@@ -644,7 +646,7 @@ vendor/etc/firmware/106.bin
 vendor/etc/firmware/107.bin
 vendor/etc/firmware/108.bin
 vendor/etc/firmware/109.bin
-vendor/etc/firmware/10.bin
+vendor/etc/firmware/11.bin
 vendor/etc/firmware/110.bin
 vendor/etc/firmware/111.bin
 vendor/etc/firmware/112.bin
@@ -655,7 +657,7 @@ vendor/etc/firmware/116.bin
 vendor/etc/firmware/117.bin
 vendor/etc/firmware/118.bin
 vendor/etc/firmware/119.bin
-vendor/etc/firmware/11.bin
+vendor/etc/firmware/12.bin
 vendor/etc/firmware/120.bin
 vendor/etc/firmware/121.bin
 vendor/etc/firmware/122.bin
@@ -666,7 +668,7 @@ vendor/etc/firmware/126.bin
 vendor/etc/firmware/127.bin
 vendor/etc/firmware/128.bin
 vendor/etc/firmware/129.bin
-vendor/etc/firmware/12.bin
+vendor/etc/firmware/13.bin
 vendor/etc/firmware/130.bin
 vendor/etc/firmware/131.bin
 vendor/etc/firmware/132.bin
@@ -677,8 +679,7 @@ vendor/etc/firmware/136.bin
 vendor/etc/firmware/137.bin
 vendor/etc/firmware/138.bin
 vendor/etc/firmware/139.bin
-vendor/etc/firmware/13.bin
-vendor/etc/firmware/14_0832.bin
+vendor/etc/firmware/14.bin
 vendor/etc/firmware/140.bin
 vendor/etc/firmware/141.bin
 vendor/etc/firmware/143.bin
@@ -688,7 +689,8 @@ vendor/etc/firmware/146.bin
 vendor/etc/firmware/147.bin
 vendor/etc/firmware/148.bin
 vendor/etc/firmware/149.bin
-vendor/etc/firmware/14.bin
+vendor/etc/firmware/14_0832.bin
+vendor/etc/firmware/15.bin
 vendor/etc/firmware/150.bin
 vendor/etc/firmware/151.bin
 vendor/etc/firmware/152.bin
@@ -698,15 +700,13 @@ vendor/etc/firmware/156.bin
 vendor/etc/firmware/157.bin
 vendor/etc/firmware/158.bin
 vendor/etc/firmware/159.bin
-vendor/etc/firmware/15.bin
+vendor/etc/firmware/16.bin
 vendor/etc/firmware/160.bin
 vendor/etc/firmware/161.bin
 vendor/etc/firmware/162.bin
 vendor/etc/firmware/163.bin
 vendor/etc/firmware/164.bin
 vendor/etc/firmware/165.bin
-vendor/etc/firmware/16.bin
-vendor/etc/firmware/1.bin
 vendor/etc/firmware/2.bin
 vendor/etc/firmware/3.bin
 vendor/etc/firmware/4.bin
@@ -898,9 +898,9 @@ vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
 vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
 vendor/etc/init/vendor.sensors.qti.rc
 vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/firmware/slpi.b00
@@ -928,34 +928,34 @@ vendor/firmware/slpi.b21
 vendor/firmware/slpi.b22
 vendor/firmware/slpi.mdt
 vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib/libsensorslog.so
+vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib/libsensorcal.so
-vendor/lib/libsnsapi.so
-vendor/lib/libsnsdiaglog.so
+vendor/lib/libsensorslog.so
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libsns_registry_skel.so
+vendor/lib/libsnsapi.so
+vendor/lib/libsnsdiaglog.so
 vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
 vendor/lib/sensors.ssc.so
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/libsensorslog.so
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
+vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/libsensorcal.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsns_registry_skel.so
+vendor/lib64/libsnsapi.so
+vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
-vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 
 # Sensors configs
 vendor/etc/sensors/config/ak991x_dri_0.json
