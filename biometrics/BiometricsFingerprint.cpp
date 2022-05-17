@@ -223,14 +223,6 @@ Return<RequestStatus> BiometricsFingerprint::remove(uint32_t gid, uint32_t fid) 
     return ErrorFilter(mDevice->remove(mDevice, gid, fid));
 }
 
-Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
-    return Void();
-}
-
-Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
-    return Void();
-}
-
 Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
         const hidl_string& storePath) {
     if (storePath.size() >= PATH_MAX || storePath.size() <= 0) {
